@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+    <form action="mi_servidor">
+        <fieldset>
+            <legend>Datos Persona</legend>
+
+            <label for="idPersona">Persona:</label>
+            <input type="text" id="idPersona" name="idPersona" required="true" readonly="true" value="100"/> <br/>
+
+            <input type="hidden" id="sistema" value="SAP"/>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required="true"/> <br/>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required="false"> <br/>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"/> <br/>
+            
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad"/> <br/>
+
+            <label>Género</label> <br/>
+            <input type="radio" name="genero" id="femenino" value="femenino"/>
+            <label for="femenino" formnovalidate="formnovalidate">Femenino</label> <br/>
+
+            <input type="radio" name="genero" id="masculino" value="masculino"]/>
+            <label for="masculino">Masculino</label> <br/>
+
+            <label>Género de música favorita</label> <br/>
+            <input type="checkbox" name="musica" id="clasica" value="clasica"/>
+            <label for="clasica">Clásica</label> <br/>
+            <input type="checkbox" name="musica" id="jazz" value="jazz">
+            <label for="jazz">Jazz</label> <br/>
+
+            <label for="autos">Marca de auto favorita</label> <br/>
+            <select name="autos" id="autos">
+                <option value="volvo">Volvo</option>
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+            </select> <br/>
+            
+            <label for="comentario">Comentario</label> <br/>
+            <textarea name="comentario" id="comentario" cols="30" rows="2"></textarea>
+            
+            <br/><br/>
+            <input type="submit" value="enviar"/>
+
+            <input type="reset" value="Restablecer">
+        </fieldset>
+    </form>
+</body>
+</html>
